@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,25 @@
     <meta name="author" content="Izabelly Gutierres Silva">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+
+    <!-- Link para a Folha de Estilo da Página - CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
     <title>Meu Perfil</title>
 </head>
+
 <body>
     <!--Cabeçalho-->
     <header>
 
-        <div id="header_content">
+        <div id="header_content" class="flex">
 
-            <div id="Titulo"> 
+            <div id="Titulo">
                 <h1>Izabelly GS</h1>
             </div>
 
             <div id="menu">
-                
                 <nav>
-
                     <ul id="menu">
                         <li>
                             <a href="index.html"> Home</a>
@@ -32,7 +36,6 @@
                         </li>
                     </ul>
                 </nav>
-
             </div>
 
         </div>
@@ -42,85 +45,70 @@
     <!--Seção Principal (main)-->
     <main>
 
-        <!-- Seção Formulário de Contato e Redes Sociais -->
-			<section id="contact">
-				
-				<!-- Seção do Formulário-->
-				<form action="#" method="submit" id="formulario">
-					<label for="nome">Nome: </label>
-					<input
-						id="name"
-						type="text"
-						name="name"
-						placeholder="Digite seu nome"
-						required
-					/>
-					<span id="txtNome"></span>
+        <section id="about" class="flex-start">
 
-					<label for="email">Email: </label>
-					<input
-						id="email"
-						type="email"
-						name="email"
-						placeholder="Digite seu email"
-						required
-					/>
-					<span id="txtEmail"></span>
+            <h2> Quem é a Izabelly Gutierres?</h2>
 
-					<label for="subject">Assunto: </label>
-					<input
-						id="subject"
-						type="text"
-						name="subject"
-						placeholder="Digite o título da mensagem"
-						required
-					/>
-					<span id="txtSubject"></span>
+            <div id="conteudo" class="flex">
 
-					<label for="message">Mensagem: </label>
-					<textarea
-						id="message"
-						name="message"
-						placeholder="Digite sua mensagem"
-						required
-					>
-					</textarea>
+                <img src="./assets/img/user_02.svg" alt="Foto do criador do site" class="img_profile">
 
-					<button type="submit">Enviar</button>
-				</form>
 
-				<!-- Seção do Google Maps -->
-				<article id="mapa">
+                <article id="sobre-texto">
 
-                    <p>Google São Paulo - 3477</p>
-                    <p>Av. Brig. Faria Lima - 18º Andar - Itaim Bibi, São Paulo - SP, 04538-133</p>
-                
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4887567440646!2d-46.68472682534128!3d-23.58679816252595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5744e0ebff5b%3A0x769bf4a32f914782!2sGoogle%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1738604147244!5m2!1spt-BR!2sbr"
-                     width="600" height="450" 
-                     style="border:0;" 
-                     allowfullscreen="" 
-                     loading="lazy" 
-                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</article>
-			</section>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quo quasi cum deleniti. Cupiditate
+                        cumque sapiente nobis magnam unde repudiandae, distinctio dolore magni odio assumenda ut
+                        mollitia illo, saepe facilis vitae amet quae sed rerum ipsa? Rem repellat dicta minima ullam
+                        sequi? Molestias iste minus nobis tempore ea corporis ipsum est sed, deleniti optio dolorum
+                        mollitia soluta nisi eum aspernatur iusto possimus error saepe quisquam earum ipsam. Unde iusto
+                        illo impedit, ducimus nesciunt numquam odio et similique laboriosam consequuntur inventore
+                        consequatur distinctio labore dolores deserunt deleniti, maiores sunt tempora recusandae eaque
+                        eveniet neque. Necessitatibus repudiandae error aliquid natus atque, modi, debitis beatae
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid a ut repellat. Quidem pariatur
+                        molestiae consectetur quam vitae dignissimos in aut modi, dolorum quo soluta ad voluptas ab
+                        quaerat iste tempore, esse voluptates est quod quas nesciunt! Recusandae architecto numquam
+                        obcaecati sapiente quidem placeat quaerat, est omnis error neque modi.
+                    </p>
 
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="video" class="flex-start">
+
+            <h2>Meu video favorito</h2>
+
+            <div id="youtube" class="flex">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BQ8eMgUsifA?si=SknK9EL0AxNxrGx8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+        </section>
     </main>
 
     <!--rodapé-->
-    <footer>
-            
-			<!-- Seção de Contato - Redes Sociais-->
-            <section id="redes_sociais">
+    <footer class="flex">
 
-                <a href="https://www.linkedin.com/in/izabelly-gutierressilva/">
-                    <img src="./assets/img/linkedin.svg" alt="LinkedIn" />
-                </a>
-                <a href="https://github.com/izabellygutierres">
-                    <img src="./assets/img/github.svg" alt="Github" />
-                </a>
-                <a href="">
-                    <img src="./assets/img/instagram.svg" alt="Instagram" />
-                </a>
+        <!-- Seção de Contato - Redes Sociais-->
+        <section id="redes_sociais">
+
+            <a href="https://www.linkedin.com/in/izabelly-gutierressilva/">
+                <img src="./assets/img/linkedin.svg" alt="LinkedIn" class="social_icon" />
+            </a>
+            <a href="https://github.com/izabellygutierres">
+                <img src="./assets/img/github.svg" alt="Github" class="social_icon" />
+            </a>
+            <a href="">
+                <img src="./assets/img/instagram.svg" alt="Instagram" class="social_icon" />
+            </a>
 
         </section>
 
@@ -130,4 +118,5 @@
 
     </footer>
 </body>
+
 </html>
